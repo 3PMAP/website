@@ -3,7 +3,8 @@ html {
   margin: 0;
   width: 100%;
   height: 100%;
-  overflow: hidden;
+  overflow: scroll;
+  overflow-x: hidden;
 }
 body {
   margin: 0;
@@ -13,6 +14,9 @@ body {
   background: #1a75ff;
   overflow: hidden;
 }
+
+/* Dropdown menu css */
+
 ul {
   list-style-type: none;
   margin: 1%;
@@ -22,6 +26,7 @@ ul {
 }
 li {
   float: left;
+  font-size: 1.2vw;
 }
 a {
   color: #1a75ff;
@@ -62,17 +67,73 @@ li.dropdown {
 .dropdown:hover .dropdown-content {
   display: block;
 }
+
+/* Standaard tekstopmaak paginas met veel tekst */
+
 .header {
   color: white;
   font-family: initial;
   float: center;
+  font-size: 2vw;
+  font-weight: bold;
 }
 .uitleg {
   color: white;
   font-family: initial;
   float: center;
-  font-size: 25px
+  font-size: 1vw;
 }
+
+/* CSS index.html */
+
+#homepage {
+  overflow: auto;
+}
+#repodiv {
+  float: left;
+  width: 19%;
+  text-align: center;
+  background-color: white;
+  padding: 1%;
+  margin-left: 1%;
+}
+.sideheader {
+  font-size: 2vw;
+  color: black;
+  text-align: center;
+}
+#repolink {
+  text-decoration: none;
+  color: black;
+  font-size: 1vw;
+}
+#homeinfo {
+  font-size: 1.5vw;
+  color: white;
+  width: 54%;
+  margin-left:1%;
+  float: left;
+  padding: 1%;
+}
+#about {
+  float: left;
+  width: 19%;
+  margin-left: 1%;
+  background-color: white;
+}
+#about_us {
+  font-size: 1vw;
+  text-align: center;
+  padding: 3%;
+  color: black;
+}
+@media only screen and (max-width:800px) {
+  #repodiv, #homeinfo, #about {
+    width: 100%;
+  }
+}
+/* CSS materials.html */
+
 #nano {
   display: block;
   width: 35%;
